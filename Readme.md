@@ -36,6 +36,13 @@ For the backend:
 cd backend (on new terminal)
 npm install
 
+
+After setting up the .env file, you need to run Prisma migrations and generate the Prisma client:
+
+npx prisma migrate dev --name init
+npx prisma generate
+
+
 4. Run the Application
 First, start the frontend:
 cd frontend
